@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
 }
 
 body {
-    font-family: sans-serif;
+    background: rgb(29, 29, 29);
+    color: rgb(212, 208, 149);
 }
 
 i,
@@ -24,27 +26,30 @@ svg {
 }
 
 .kick-pad {
-    background: rgb(183, 253, 253);
+    background: rgb(131, 237, 237);
+    background: radial-gradient(circle, rgba(131, 237, 237, 1) 0%, rgba(70, 100, 252, 1) 100%);
 }
 
 .snare-pad {
-    background: rgb(255, 183, 249);
+    background: rgb(82, 238, 75);
+    background: linear-gradient(0deg, rgba(82, 238, 75, 1) 0%, rgba(144, 50, 240, 1) 100%);
 }
 
 .hihat-pad {
-    background: rgb(250, 208, 145);
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
 }
 
 .kick-pad.active {
-    background: rgb(0, 224, 224);
+    background: rgb(3, 43, 241);
 }
 
 .snare-pad.active {
-    background: rgb(221, 0, 203);
+    background: rgba(82, 238, 75, 1);
 }
 
 .hihat-pad.active {
-    background: rgb(231, 112, 0);
+    background: rgba(253, 29, 29, 1);
 }
 
 .sequencer {
@@ -83,11 +88,15 @@ svg {
     padding: 0.7rem;
     border: none;
     border-radius: 0.5rem;
-    background: gray;
+    background: rgb(231, 191, 132);
     color: white;
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.5s ease;
+}
+
+.fa-volume-mute {
+    color: black;
 }
 
 .pad {
@@ -96,23 +105,28 @@ svg {
 
 .play {
     padding: 1rem 2rem;
-    font-size: 1.5rem;
-    background: gray;
-    color: white;
+    font-size: 1.7rem;
+    background: rgb(231, 191, 132);
+    color: black;
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
     margin-top: 4rem;
 }
 
+.play.active {
+    background: rgb(218, 146, 40);
+}
+
 select {
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     border-radius: 0.5rem;
+    background: rgb(212, 208, 149);
 }
 
 .mute.active {
-    background: rgb(201, 201, 201);
+    background: rgb(218, 146, 40);
 }
 
 .tempo {
@@ -126,13 +140,13 @@ select {
     margin: 1rem 0rem;
     width: 100%;
     position: relative;
-    background: gray;
+    background: rgb(212, 208, 149);
     cursor: pointer;
     border-radius: 1rem;
 }
 
 .tempo p {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     margin: 2rem;
     text-align: center;
 }
