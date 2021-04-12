@@ -10,6 +10,14 @@ body {
     color: rgb(212, 208, 149);
 }
 
+.title {
+    color: rgb(228, 112, 112);
+    font-family: 'Train One', cursive;
+    font-size: 3rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
 i,
 svg {
     pointer-events: none;
